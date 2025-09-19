@@ -1,0 +1,147 @@
+:root {
+  --primary: #000;
+  --accent: #FFA500;
+  --white: #fff;
+  --light-grey: #f8f9fa;
+  --grey: #6c757d;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--light-grey);
+  color: var(--primary);
+}
+
+.navbar {
+  background: var(--primary);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.donate-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.search-box {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+
+.recommendations {
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.card p {
+  margin: 0;
+  color: var(--grey);
+}
+
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.footer-links a,
+.socials a {
+  color: var(--light-grey);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.bottom-footer {
+  text-align: center;
+  border-top: 1px solid var(--grey);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

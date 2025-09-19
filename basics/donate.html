@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate - Alumnex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-donate.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar slide-down">
+    <div class="navbar-container">
+      <div class="logo">🎓 Alumnex</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="events.html">Events</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="donate-container fade-in">
+    <h2 class="section-title">Search for Alumni</h2>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Search alumni by name or field..." />
+    </div>
+
+    <!-- Recommended Alumni -->
+    <section class="recommendations">
+      <h3 class="sub-heading">Recommended Connections</h3>
+      <div id="alumniCards" class="cards-container">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="footer-content">
+      <div class="left">
+        <h2>VASSAR</h2>
+        <p>📍 124 Raymond Avenue, Poughkeepsie, NY 12604</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#">Academics</a>
+          <a href="#">Admission</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Institute</a>
+        </div>
+        <div class="socials">
+          <a href="#">📸</a>
+          <a href="#">🎥</a>
+          <a href="#">💼</a>
+          <a href="#">🎵</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <p>© 2025 Vassar College</p>
+    </div>
+  </footer>
+
+  <script src="donate.js"></script>
+</body>
+</html>
